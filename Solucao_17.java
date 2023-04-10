@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.text.MessageFormat;
 import java.text.DecimalFormat;
-public class Solucao17
+public class Solucao_17
 {
 
     static int calc_latas_tintas(double area,double tinta)
@@ -47,7 +47,7 @@ public class Solucao17
 
         String res1 = MessageFormat.format("Você comprou {0} tintas de 18L e gastou {1}R$",tot_tinta_18,tot_tinta_18 * 80.00);
         String res2 = MessageFormat.format("Você comprou {0} tintas de 3,6L e gastou {1}R$",tot_tinta_36,tot_tinta_36 * 25.00);
-        String res3 = MessageFormat.format("Você comprou {0} tintas e gastou {1}R$",(int) (calc_tintas_18 + calc_tintas_36),dt.format(calc_tintas_18 * 80.00),calc_tintas_36 * 25.00);
+        String res3 = MessageFormat.format("Você comprou {0} tintas e gastou {1}R$",(int) (calc_tintas_18 + calc_tintas_36),((int) calc_tintas_18 * 80.00) + ((int) calc_tintas_36 * 25.00));
         
 
        System.out.println(res1);
